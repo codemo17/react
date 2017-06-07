@@ -1,0 +1,65 @@
+{
+  "name": "javascript-dev-starter",
+  "version": "1.0.0",
+  "description": "javascript dev starter",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint  src/",
+    "lint:watch": "esw -- --watch",
+    "test": "npm run lint && mocha --opts ./.mocha/mocha.opts",
+    "start": "babel-node ./.webpack/server.js"
+  },
+  "repository": "git+https://github.com/shnoby/dev-env--js.git",
+  "keywords": [
+    "starter",
+    "js",
+    "javascript"
+  ],
+  "author": "shn0by",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shnoby/dev-env--js/issues"
+  },
+  "homepage": "https://github.com/shnoby/dev-env--js#readme",
+  "pre-commit": [
+    "test"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-watch": "^3.1.0",
+    "express": "^4.15.3",
+    "flow-bin": "^0.47.0",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "jsdom": "^11.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^3.4.2",
+    "nsp": "^2.6.3",
+    "pre-commit": "^1.2.2",
+    "react-css-modules": "^4.3.0",
+    "react-test-renderer": "^15.5.4",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}

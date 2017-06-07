@@ -1,0 +1,21 @@
+/* disable eslint */
+{
+  "presets": [
+    "react",
+    "es2015",
+    "flow"
+  ],
+  plugins: [
+    [
+      "module-resolver",
+    {
+      "root": [
+        "./src"
+      ],
+      "extensions": [".js", ".jsx"],
+    }
+  ]],
+  "compact": false,
+  "sourceMaps": true,
+}
+/* enable eslint */

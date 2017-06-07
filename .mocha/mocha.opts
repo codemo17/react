@@ -1,0 +1,5 @@
+--compilers js:babel-register
+--require jsdom-global/register
+--require .mocha/mocha-helper.js
+--recursive src/**/__tests__/*.spec.js
+

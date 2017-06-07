@@ -1,0 +1,23 @@
+# use version 2.0
+version: "2.0"
+
+# define services
+services:
+  #react development setup
+  app-dev:
+    container_name: app--dev
+    image: app--dev
+    build:
+      context: .
+      dockerfile: ./.docker/node.dev.dockerfile
+      ports:
+        - "6060:6060"
+      env_file:
+        - ./.docker/env/dev.env
+      networks:
+        - default
+      volumes:
+        - .:/code
+        - /code/node_modules
+
+
