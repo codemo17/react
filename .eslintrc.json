@@ -23,7 +23,8 @@
   "rules": {
     "no-console": 1,
     "indent": [2, 2],
-    "comma-dangle": [2, { "objects": "always", "arrays" : "always-multiline" }]
+    "comma-dangle": [2, { "objects": "always-multiline",
+    "arrays" : "always-multiline" }]
   }
 }
 

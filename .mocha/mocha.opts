@@ -1,5 +1,7 @@
---compilers js:babel-register
+--compilers js:babel-core/register
 --require jsdom-global/register
 --require .mocha/mocha-helper.js
---recursive src/**/__tests__/*.spec.js
+--reporter spec
+--recursive src/**/specs/*.spec.js
+--lib flow/global.js
 

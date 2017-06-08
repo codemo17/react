@@ -3,7 +3,7 @@ import express from 'express';
 import webpack from 'webpack';
 import middleware from 'webpack-dev-middleware';
 
-import configuration from './base.config';
+import configuration from './dev.config';
 
 const port = 7000;
 const app = express();
