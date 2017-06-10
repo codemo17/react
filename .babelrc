@@ -11,8 +11,13 @@
       "module-resolver",
     {
       "root": [
-        "./src"
+        "./src",
       ],
+      "alias": {
+        "components": "./src/lib/components",
+        "app": "./src/app/",
+        "contacts": "./src/app/screens/contacts",
+      },
       "extensions": [".js", ".jsx"],
     }
   ]],

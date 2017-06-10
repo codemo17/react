@@ -2,6 +2,7 @@
 --compilers jsx:babel-register
 --require jsdom-global/register
 --require .mocha/mocha-helper.js
+--require mock-css-modules -p
 --reporter spec
 --recursive src/**/specs/*.spec.js
 --lib flow/global.js

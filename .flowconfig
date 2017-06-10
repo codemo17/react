@@ -1,7 +1,7 @@
 [ignore]
 
 [include]
-.*/src/.*
+./src/
 
 [libs]
 
@@ -13,3 +13,7 @@ module.file_ext=.jsx
 module.file_ext=.css
 module.file_ext=.scss
 module.file_ext=.bemcss
+
+
+module.name__mapper='^contacts\/$' -> '<PROJECT_ROOT>/app/scenes/contacts/'
+module.name__mapper='^components\/$' -> '<PROJECT_ROOT>/lib/components/'

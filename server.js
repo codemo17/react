@@ -3,7 +3,7 @@ import express from 'express';
 import webpack from 'webpack';
 import middleware from 'webpack-dev-middleware';
 
-import configuration from './dev.config';
+import configuration from './webpack.dev.config';
 
 const port = 7000;
 const app = express();
@@ -19,7 +19,7 @@ app.use(middleware(compiled, {
 }));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, './src/index.html'));
 });
 
 app.listen(port, (err) => {

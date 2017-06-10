@@ -1,34 +1,26 @@
 import webpack from 'webpack';
 import webpackMerge from 'webpack-merge';
 
-import baseConfig from './base.config';
+import baseConfig from './webpack.base.config';
 
-export default  webpackMerge(
+export default webpackMerge(
   baseConfig,
   {
+    devtool: 'cheap-module-eval-source-map',
     entry: {
       main: [
         'babel-polyfill',
-        './src/index.js',
+        './src/app/index.js',
       ],
     },
     output: {
-      path: __dirname,
       publicPath: '/',
       filename: 'bundle.js',
     },
     module: {
       rules: [
         {
-          test: /\.bemcss/,
-          use: [
-            'style-loader',
-            'css-loader',
-            'sass-loader?sourceMap',
-          ],
-        },
-        {
-          test: /\.bemcss/,
+          test: /\.bemcss$/,
           use: [
             'style-loader',
             'css-loader?modules=true&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
@@ -37,7 +29,7 @@ export default  webpackMerge(
           ],
         },
         {
-          test: /\.sass/,
+          test: /\.sass$/,
           use: [
             'style-loader',
             'css-loader',
@@ -45,7 +37,7 @@ export default  webpackMerge(
           ],
         },
         {
-          test: /\.css/,
+          test: /\.css$/,
           use: [
             'style-loader',
             'css-loader',
