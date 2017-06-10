@@ -5,7 +5,6 @@ import React from 'react';
 
 // core test libraries
 import { describe, it, before } from 'mocha';
-import { beforeEach } from 'mocha';
 import expect from 'expect';
 import { mount, shallow } from 'enzyme';
 
@@ -41,7 +40,7 @@ describe('table', function() {
           columnB: 'value_B_2',
         },
       ],
-      onRowClick: (rest) => { console.log(rest) },
+      onRowClick: () => { },
     };
 
   });

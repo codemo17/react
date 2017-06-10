@@ -34,7 +34,7 @@ const Thead = (props) => {
     <thead
       id={id}>
       <tr>
-        { columns.map((column) => <th>{column.caption}</th>) }
+        { columns.map((column, i) => <th key={`col-${i}`}>{column.caption}</th>) }
       </tr>
     </thead>
 
@@ -43,7 +43,6 @@ const Thead = (props) => {
 
 const {
   shape,
-  func,
   string,
   number,
   arrayOf,

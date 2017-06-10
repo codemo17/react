@@ -4,9 +4,9 @@
 import React from 'react';
 
 // core test libraries
-import { describe, context, it } from 'mocha';
+import { describe, it } from 'mocha';
 import expect from 'expect';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 // sut - component under test
 import Body from '../body';

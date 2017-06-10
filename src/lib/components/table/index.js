@@ -1,2 +1,3 @@
-export default from './table';
+// @flow
+export { default } from './table';
 

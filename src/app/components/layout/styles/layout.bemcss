@@ -1,0 +1,23 @@
+/* layout.bemcss */
+.container {
+  background-color: transparent;
+  &--header {
+    background-color: transparent;
+  }
+
+  &--body {
+    background-color: transparent;
+  }
+
+  &--navigation {
+    background-color: transparent;
+  }
+
+  &--content {
+    background-color: transparent;
+  }
+
+  &--footer {
+    background-color: transparent;
+  }
+}
