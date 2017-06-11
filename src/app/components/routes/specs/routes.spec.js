@@ -16,6 +16,7 @@ import expect from 'expect';
 // sut - component under test
 import Layout from 'app/components/layout';
 import Contacts from 'contacts/components/plural';
+import Contact from 'contacts/components/singular';
 import routes from '../config';
 
 const { arrayOf } = PropTypes;
@@ -29,6 +30,7 @@ describe('Root path "/"', function() {
       const node = document.createElement('div');
       const assert = (props:{components: arrayOf}) => {
         expect(props.components).toEqual([ Layout, Contacts ]);
+        expect(props.components).toExclude([Contact]);
         return <div/>
       };
 

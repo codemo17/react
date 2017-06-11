@@ -25,22 +25,24 @@ describe('table', function() {
             {
               index: 0,
               caption: 'columnA',
+              field:'A',
             },
             {
               index: 1,
               caption: 'columnB',
+              field:'B',
             },
           ],
           data: [
             {
               id: 0,
-              columnA: 'value_A_1',
-              columnB: 'value_B_1',
+              A: 'value_A_1',
+              B: 'value_B_1',
             },
             {
               id: 2,
-              columnA: 'value_A_2',
-              columnB: 'value_B_2',
+              A: 'value_A_2',
+              B: 'value_B_2',
             },
           ],
         };
@@ -48,8 +50,9 @@ describe('table', function() {
         const wrapper = mount(<Body {...props}/>);
         const cells = wrapper.find('tr td');
         expect(cells.length).toEqual(props.columns.length * props.data.length);
-        expect(cells.first().text()).toEqual(data[0][columns[0].caption]);
-        expect(cells.last().text()).toEqual(data[data.length-1][columns[columns.length-1].caption]);
+        expect(cells.first().text()).toEqual(data[0][columns[0].field]);
+        expect(cells.last().text()).toEqual(data[data.length-1][columns[columns.length-1].field]);
+        expect(cells.first().hasClass(`table__body__cell--${columns[0]['field']}`)).toBe(true);
       });
 
     });

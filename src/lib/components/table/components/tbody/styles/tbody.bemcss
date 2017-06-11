@@ -1,1 +1,21 @@
 /* tbody.bemcss */
+
+.table {
+  &__body {
+
+    &__cell {
+
+      &--id{
+        background: transparent;
+      }
+
+      &--name {
+        background: transparent;
+      }
+
+      &--role {
+        background: transparent;
+      }
+    }
+  }
+}

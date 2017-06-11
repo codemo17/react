@@ -1,8 +1,8 @@
 // @flow
 
 import { combineReducers } from 'redux';
-import contacts from 'contacts/store';
+import { ContactsState as many } from './reducers';
 
 export default combineReducers ({
-  contacts,
-});
+  many,
+})

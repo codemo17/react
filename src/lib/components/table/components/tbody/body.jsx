@@ -38,7 +38,10 @@ const Tbody = (props) => {
           return <tr
             onClick={(e) => onRowClick(e, d['id'])}
             key={`table__row--${d.id}`}>
-            { columns.map((col) => <td key={`table__row--${d.id}-cell-${col.caption}`}>{ d[col.caption] }</td>) }
+            { columns.map((col) => <td
+              key={`table__row--${d.id}-cell--${col.caption}`}
+              styleName={`table__body__cell--${col.field}`}>
+              { d[col.field] }</td>) }
           </tr>
         } )
       }
