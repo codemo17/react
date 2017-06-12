@@ -1,7 +1,7 @@
 [ignore]
 
 [include]
-./src/
+./src
 
 [libs]
 
@@ -15,5 +15,8 @@ module.file_ext=.scss
 module.file_ext=.bemcss
 
 
-module.name__mapper='^contacts\/$' -> '<PROJECT_ROOT>/app/scenes/contacts/'
-module.name__mapper='^components\/$' -> '<PROJECT_ROOT>/lib/components/'
+module.name_mapper='^contacts\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/screens/contacts/\1'
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/src/lib/components/\1'
+module.name_mapper='^restapi\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/services/restapi/\1'
+module.name_mapper='^app\/\(.*\)$' -> '<PROJECT_ROOT>/src/app/\1'
+

@@ -12,6 +12,8 @@ export default {
     alias: {
       components: path.resolve(__dirname, './src/lib/components'),
       contacts: path.resolve(__dirname, './src/app/screens/contacts'),
+      restapi: path.resolve(__dirname, './src/app/services/restapi'),
+
     },
   },
   module: {

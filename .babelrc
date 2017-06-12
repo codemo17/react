@@ -18,6 +18,7 @@
         "components": "./src/lib/components",
         "app": "./src/app/",
         "contacts": "./src/app/screens/contacts",
+        "restapi": "./src/app/services/restapi",
       },
       "extensions": [".js", ".jsx"],
     }
