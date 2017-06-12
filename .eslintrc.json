@@ -29,7 +29,7 @@
     "comma-dangle": [2, { "objects": "always-multiline",
     "arrays" : "always-multiline" }],
     "no-undef": 2,
-    "no-unused-vars": 1
+    "no-unused-vars": 0
   },
   "settings": {
     "import/resolver": {

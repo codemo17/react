@@ -1,14 +1,15 @@
 {
-  "name": "javascript-dev-starter",
-  "version": "1.0.0",
-  "description": "javascript dev starter",
+  "name": "react-redux-exemplary-code",
+  "version": "0.0.1",
+  "description": "react redux exemplary code",
   "main": "index.js",
   "scripts": {
     "doc": "esdoc",
     "lint": "eslint  src/",
     "lint:watch": "esw -- --watch",
     "test": "npm run lint && mocha --opts ./.mocha/mocha.opts --watch",
-    "start": "babel-node server.js"
+    "start": "babel-node server.js",
+    "check": "npm run lint && flow"
   },
   "repository": "git+https://github.com/shnoby/dev-env--js.git",
   "keywords": [
@@ -20,11 +21,11 @@
   "author": "shn0by",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shnoby/dev-env--js/issues"
+    "url": "https://github.com/codemo17/react#issues"
   },
-  "homepage": "https://github.com/shnoby/dev-env--js#readme",
+  "homepage": "https://github.com/codemo17/react#readme",
   "pre-commit": [
-    "lint"
+    "check"
   ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
